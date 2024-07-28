@@ -1,4 +1,4 @@
-package eu.tutorials.locationapp
+package com.example.mylocationapp
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf

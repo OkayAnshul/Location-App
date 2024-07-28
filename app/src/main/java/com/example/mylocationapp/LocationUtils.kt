@@ -1,5 +1,4 @@
-package eu.tutorials.locationapp
-
+package com.example.mylocationapp
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Context
