@@ -1,13 +1,16 @@
-package com.example.mylocationapp
+package eu.tutorials.locationapp
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
+import com.example.mylocationapp.LocationData
 
-class LocationViewModel:ViewModel() {
-    private val _location= mutableStateOf<LocationData?>(null)
-    val location:State<LocationData?> =_location
-fun updateLocation(newLocation:LocationData){
-_location.value=newLocation
-}
+class LocationViewModel: ViewModel() {
+    private val _location = mutableStateOf<LocationData?>(null)
+    val location: State<LocationData?> = _location
+
+    fun updateLocation(newLocation: LocationData){
+        _location.value = newLocation
+    }
+
 }
