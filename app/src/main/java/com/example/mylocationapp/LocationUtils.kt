@@ -64,4 +64,3 @@ class LocationUtils(val context:Context) {
         }
 
     }
-}

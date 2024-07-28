@@ -55,6 +55,9 @@ viewModel: LocationViewModel){
 
     val permission= arrayOf(Manifest.permission.ACCESS_FINE_LOCATION,
         Manifest.permission.ACCESS_COARSE_LOCATION)
+    val address = viewModel.location.value?.let{
+        locationUtils.reverseGeocoderLocation(viewModel.location.value!!)
+    }
 
     val requestPermissionLauncher= rememberLauncherForActivityResult(
         contract =ActivityResultContracts.RequestMultiplePermissions(),
