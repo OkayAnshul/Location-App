@@ -51,9 +51,8 @@ android {
 
 dependencies {
 
+    implementation("com.google.android.gms:play-services-location:21.3.0")
     //For Location
-    implementation(libs.play.services.location)
-    implementation(libs.accompanist.permissions)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
